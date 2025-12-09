@@ -28,16 +28,37 @@
 
 #print("bye")
 
-num = int(input(" Enter a # between 1 - 10:"))
+#num = int(input(" Enter a # between 1 - 10:"))
 
-while num < 1 or num > 10:
-  print (f:{num} is not valid")
-  num = int(input(" Enter a # between 1 - 10:"))
+#while num < 1 or num > 10:
+  #print (f:{num} is not valid")
+  #num = int(input(" Enter a # between 1 - 10:"))
 
-print ( f" Your number is {num}")
+#print ( f" Your number is {num}")
 # Given:g
 colors = ["red", "blue", "green", "yellow", "purple"]
 
 # Challenge:
 # Use a while loop to print each color UNTIL you find "yellow".
 # Do NOT print "yellow" — stop before it.
+
+for color in colors:
+    if color == "yellow":
+        break
+    else:
+        print(color)
+
+for color in colors:
+    if color == "yellow":
+        continue
+    else:
+        print(color)
+
+
+
+index = 0
+while index < len(colors):
+    if colors[index] == "yellow":
+        break
+    print(colors[index])
+    index += 1 # increment the index to avoid infinite loop
