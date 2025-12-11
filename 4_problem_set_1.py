@@ -13,11 +13,12 @@ for number in list1to10:
 
 # ### **Problem 2: Sum of Numbers
 # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
-n= int(input(:Enter a number:))
+n= int(input("Enter a number""))
 total_sum= 0
 for number in range(1, n +1):
    total_sum += number
    print("The sum of numbers from 1 to",n,"is:", total_sum)
+
 # ### **Problem 3: Factorial Calculator
 
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
