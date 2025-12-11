@@ -71,7 +71,16 @@ for number in list_even_numbers:
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
-
+name = input("Enter a string:")
+reversed_name = ""
+for char in name:
+    # ---
+    # ---
+    # and adding it to the front of reversed_name
+    reversed_name = char + reversed_name
+    # prepend each character to reverse_name
+print("Reversed string:", reversed_name)
+print(reversed_name[::-1])  # alternative method using sllcing
 
 
 
@@ -98,7 +107,25 @@ for number in list_even_numbers:
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
 
+# recursion means a function calls itself
+# an example of recursion is the Fibonacci sequence
+def car_price(n):
+    if n <= 0:
+        return 0
+   # elif == 1:
+        return 1
+  #  else can car_price(n-1) + car_price (n - 2)
+print(car_price(6))
+####################################################################################
+def fibonacci(n):
 
+    if n==1 or n==2:
+        return 1 
+
+    return fibonacci (n-1) + fibonacci(n-2)
+
+for i in range(1,10):
+    print(i)
 
 
 # ### **Problem 10: Pattern Printing**
