@@ -13,7 +13,7 @@ for number in list1to10:
 
 # ### **Problem 2: Sum of Numbers
 # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
-n= int(input("Enter a number""))
+n= int(input("Enter a number"))
 total_sum= 0
 for number in range(1, n +1):
    total_sum += number
