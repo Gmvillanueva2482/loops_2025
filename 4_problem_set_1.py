@@ -11,6 +11,7 @@ list1to10 = list(range(1,11))
 for number in list1to10:
     print(number)
 
+
 # ### **Problem 2: Sum of Numbers
 # Ask the user for a number **n**, then calculate and display the **sum of all numbers from 1 to n**.
 n= int(input("Enter a number"))
@@ -19,11 +20,28 @@ for number in range(1, n +1):
    total_sum += number
    print("The sum of numbers from 1 to",n,"is:", total_sum)
 
-# ### **Problem 3: Factorial Calculator
 
+# ### **Problem 3: Factorial Calculator
+for i in range(10):
+    print(i)
+
+def factorial(n):
+    factorial=1
+
+    for i in range(n):
+        factorial*=i+1
+
+
+    return factorial
+print(factorial(0))
+print(factorial(5))
+print(factorial(21))
+print(factorial(12))
 # Ask the user for a number **n**, then calculate the **factorial** of that number.
 
 # *(Example: factorial of 5 is 120)
+
+
 
 
 # ### **Problem 4: Count Vowels**
@@ -31,15 +49,30 @@ for number in range(1, n +1):
 # Ask the user for a string. Count and print how many **vowels (a, e, i, o, u)** are in the string.
 
 
-# ### **Problem 5: Print Even Numbers**
 
+
+# ### **Problem 5: Print Even Numbers**
 # Ask the user for a number **n**, then print all **even numbers** from 2 up to n.
+n = int(input("Enter a number:"))
+print("even numbers from 2 to", n, ":")
+for number in range(2, n+1,2):
+    print(number)
+
+list_even_numbers= list(range(1,45))
+for number in list_even_numbers:
+    # if number is even, print it
+    if number % 2 == 0:
+        print("even number",number)
+    else:
+        print( "add number, skipping", number)
 
 
 
 # ### **Problem 6: Reverse a String**
 
 # Ask the user for a string, then print the string **backwards**.
+
+
 
 
 
@@ -50,6 +83,8 @@ for number in range(1, n +1):
 
 
 
+
+
 # ### **Problem 8: Count Occurrences**
 
 # Ask the user for **two strings**, a and b.
@@ -57,9 +92,12 @@ for number in range(1, n +1):
 
 
 
+
+
 # ### **Problem 9: Fibonacci Sequence**
 
 # Ask the user for a number **n**, then print the first **n numbers** of the Fibonacci sequence.
+
 
 
 
